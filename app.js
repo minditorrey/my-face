@@ -1,6 +1,6 @@
 'use strict';
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 var express = require('express');
 var morgan = require('morgan');
@@ -9,6 +9,9 @@ var http = require('http');
 var path = require('path');
 var mongoose = require('mongoose');
 var jwt = require('jsonwebtoken');
+var cookieParser = require('cookie-parser');
+ 
+require('dotenv').config();
 
 const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost/my-face';
 
@@ -17,7 +20,7 @@ mongoose.connect(MONGOURL, err => {
 });
 
 var app = express();
-
+app.use(cookieParser());
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));

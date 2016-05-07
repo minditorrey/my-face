@@ -1,0 +1,41 @@
+body {
+	background-color: #caf0f7;
+
+}
+
+h1 {
+	font-size: 72px;
+	margin-left: 18%;
+	height: 150px;
+	padding-top: 30px;
+	font-weight: bold;
+	color: #caf0f7;
+}
+
+.header {
+	background-color: black;
+}
+
+.btns {
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 5%;
+	float: right;
+}
+
+
+.nav-btns {
+	float: bottom 50%;
+	color: #caf0f7;
+}
+
+.submit {
+	margin-top: 3%;
+	background-color: black;
+	color: #caf0f7;
+}
+.brand {
+	font-size: 72px;
+	color: #caf0f7;
+	font-weight: bold;
+}
